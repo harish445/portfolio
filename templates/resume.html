@@ -1,0 +1,15 @@
+{% load static %}
+
+<div id="fh5co-resume" class="fh5co-bg-color">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>My Resume</h2>
+            </div>
+        </div>
+        <div class="center">
+            <img src="{{profile.cv.url}}" width="100%" height="auto" alt="Resume_image" />
+            <a href="{% static 'images/profile/cv/harish_resume.pdf' %}"><button class="btn" style="color:rgb(145, 58, 58);margin:auto;display:block;">View/Download</button></a>
+        </div>
+    </div>
+</div>

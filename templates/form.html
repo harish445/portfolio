@@ -1,0 +1,58 @@
+{% load static %}
+
+<div id="fh5co-started" class="fh5co-bg-dark">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>Hire Me!</h2>
+                <p>"Formal education will make you a living; self-education will make you a fortune...."</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="fh5co-consult">
+    <div class="video fh5co-video" style="background-image: url( '{% static 'images/cover1.jpg' %}');">
+        <div class="overlay"></div>
+    </div>
+    <div class="choose animate-box">
+        <h2>Contact</h2>
+        <form action="{% url 'send_email' %}" method="POST">
+            {% csrf_token %}
+            <hr>
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <input type="text" id="fname" class="form-control" placeholder="GET IN TOUCH!" name="firstname" />
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <input type="text" id="lname" class="form-control" placeholder="Your name" name="lastname" required/>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <input type="text" id="email" class="form-control" placeholder="Your email address" name="email" required/>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <input type="text" id="subject" class="form-control" placeholder="Your subject of this message" name="subject" required/>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us" name="message" required/></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary">
+            </div>
+
+        </form>	
+    </div>
+</div>

@@ -1,0 +1,18 @@
+{% load static %}
+
+<div id="fh5co-skills" class="animate-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>Skills</h2>
+            </div>
+        </div>
+        <div class="row row-pb-md">
+            {% for i in skill %}
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                <img style="border-radius:50% 50% 50% 50%; background-size: cover; width:100px; height:100px; padding-bottom:0em; margin:1em" src="{{i.icon.url}}" alt="skill_icon" />
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
