@@ -25,7 +25,7 @@ SECRET_KEY = 'sysd)2)ajv(4cw1tl2%0&m%q2g8+4-rb)ulkvcgayr7@xh+1!y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['portfolio-harish.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
